@@ -4,9 +4,9 @@ FROM almalinux:8.6
 LABEL maintainer="connor@rhodes.contact"
 LABEL description="AlmaLinux Docker image for use with the ACG Python3 Scripting for System Administrators course"
 RUN yum update
-RUN yum groupinstall -y "development tools"
 
 # install needed python dev commands
+RUN yum groupinstall -y "development tools"
 RUN yum install -y lsof wget vim-enhanced words which 
 
 # install generally useful commands
