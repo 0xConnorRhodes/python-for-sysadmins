@@ -9,5 +9,8 @@ RUN yum update
 RUN yum groupinstall -y "development tools"
 RUN yum install -y lsof wget vim-enhanced words which 
 
+# install build dependencies for python
+Run yum install -y libffi-devel zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel expat-devel
+
 # install generally useful commands
 RUN yum install -y iproute
